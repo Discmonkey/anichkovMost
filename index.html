@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Anichkov Most Travel, by Max Grinchenko </title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>
+			$(window).scroll(function() {
+				if($(window).scrollTop() + $(window).height() == $(document).height()) {
+	   				$('.fixed_top, .fixed_bottom').slideDown();
+				} else {
+					$('.fixed_top, .fixed_bottom').slideUp();
+				}
+			});
+
+			$(function(){
+				element_h = $("#give_me_margin").height();
+				win_height = $(window).height();
+				console.log(element_h)
+				console.log(win_height)
+				top_margin = (win_height-element_h)*.55
+				bottom_margin = (win_height-element_h)*.45
+
+				$("#give_me_margin").css('margin-top',top_margin+'px').css('margin-bottom',bottom_margin+'px');
+			});
+
+			$(window).resize(function(){
+				element_h = $("#give_me_margin").height();
+				win_height = $(window).height();
+				console.log(element_h)
+				console.log(win_height)
+				top_margin = (win_height-element_h)*.55
+				bottom_margin = (win_height-element_h)*.45
+
+				$("#give_me_margin").css('margin-top',top_margin+'px').css('margin-bottom',bottom_margin+'px');
+			});
+		</script>
+	</head>
+<body>
+
+<!-- left column -->
+<div class="fixed_left">
+	<table width="100%" height = "100%">
+		<tr>
+			<td> <div class="chart_div"> <image onmouseover='fill_box("Alaska, US")'
+				id="center_image" src="pictures/deals_images/alaska_us.jpg"></div> </td>
+		</tr>
+		<tr>
+			<td> <div class="chart_div"> <image onmouseover='fill_box("Bermuda")'
+				id="center_image" src="pictures/deals_images/bermuda.jpg"></div>  </td>
+		</tr>
+
+		<tr>
+			<td> <div class="chart_div"> <image onmouseover='fill_box("India")'
+				id="center_image" src="pictures/deals_images/india.jpg"> </div>     </td>
+		</tr>
+		<tr>
+			<td> <div class="chart_div"> <image onmouseover='fill_box("Australia")'
+				id="center_image" src="pictures/deals_images/australia.jpg"> </div>   </td>
+		</tr>
+	</table>`
+</div>
+
+<!-- right column -->
+<div class="fixed_right">
+<table width="100%" height = "100%">
+	<tr>
+		<td> <div class="chart_div"> <image onmouseover='fill_box("Jerusalem, Israel")'
+			id="center_image" src="pictures/deals_images/jerusalem_israel.jpg"></div> </td>
+	</tr>
+	<tr>
+		<td> <div class="chart_div"> <image onmouseover='fill_box("Moscow, Russia")'
+			id="center_image" src="pictures/deals_images/moscow_russia.jpg"></div>  </td>
+	</tr>
+
+	<tr>
+		<td> <div class="chart_div"> <image onmouseover='fill_box("Paris, France")'
+			id="center_image" src="pictures/deals_images/paris_france.jpg"> </div>  </td>
+	</tr>
+	<tr>
+		<td> <div class="chart_div"> <image onmouseover='fill_box("Patagonia, Argentina")'
+			id="center_image" src="pictures/deals_images/patagonia_argentina.jpg"> </div> </td>
+	</tr>
+</table>
+</div>
+
+<!-- Top (hidden) div -->
+<div class="fixed_top">
+	<table width="100%" height="100%">
+		<tr>
+			<td>
+				<div class="chart_div"> <image onmouseover='fill_box("Rome, Italy")'
+				id="center_image" src="pictures/deals_images/rome_italy.jpg"></div>
+			</td>
+			<td>
+				<div class="chart_div"> <image onmouseover='fill_box("Saint Petersburg, Russia")'
+					id="center_image" src="pictures/deals_images/saintpetersburg_russia.jpg"></div>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<!-- Bottom (hidden) div --> 
+<div class="fixed_bottom">
+	<table width="100%" height="100%">
+		<td>
+			<div class="chart_div"> <image onmouseover='fill_box("Tihuacan, Mexico")'
+			id="center_image" src="pictures/deals_images/sanjuanteotihuacan_mexico.jpg"></div>
+		</td>
+		<td>
+			<div class="chart_div"> <image onmouseover='fill_box("Tokyo, Japan")'
+				id="center_image" src="pictures/deals_images/tokyo_japan.jpg"></div>
+		</td>
+	</table>
+</div>
+
+
+
+<!-- main content -->
+<div class = "main_content">
+
+<!-- content pane 1: Title and Bridge Picture -->
+
+	<div>
+		<image src="pictures/anichkovmost.jpeg" style = "width: 100%; height: 100%;
+			border-style:solid 1px; border-radius: 10px;">
+		<h2> <span> Anichkov Most Travel<span class='spacer'></span><br/><span class='spacer'></span> Over 10 years of Amazing Trips!</span> <h2>
+	</div>
+<!-- end of pane 1 -->
+
+
+<br> <br> <br>
+
+<!-- Content of pane 2: -->
+
+<div class="image2" >
+<center>
+<p>
+We are a family-run business that aims to satisfy all you travel needs and desires.
+We believe in making dreams come true on affordable budgets.
+We know how much it means to roam the Caribbean coast with family, take romantic getaways to Paris,
+and explore the wind-weathered wonders of Turkey.
+</p>
+
+<p>
+Want to beach comb in Bermuda? Or take a family cruise to Italy? Tell us where you want to go,
+and let us take you there. We take care of visas, hotels, flights, and transportation.
+We arrange trips, so there are no hassles or hangups.
+Click this link to view some of the many places we can send you.
+Leave your name and phone number, and we will call you back within five business days. Let us make your dreams come true.
+</p>
+</center>
+</div>
+
+<!-- end of content pane 2 -->
+
+<br><br><br>
+
+<!-- start of content pane 3 -->
+
+
+<div class="image2">
+
+<p>
+A little about the owner...
+</p>
+<p>
+Marianna is a travel enthusiast and expert.<image src="pictures/mom.jpg" id="mom">
+Originally born in St. Petersburg, Russia, she has made her living here in the United States for the past 17 years.
+Along the way she has made dream vacations come true for thousands of clients;
+never losing her enthusiasm or passion for finding the perfect destination for every individual who wanders into her office.
+In her free time Marianna loves exercise, entertaining <a href="test/bulldog.html">this</a>
+English Bulldog, preparing her world-famous tomato-garlic sauce, and gatherings with as many friends and family as possible.
+She promises to use her wide-ranging travel experience to make your vacation a success!
+</p>
+
+</div>
+<!-- end of content pane 3 -->
+
+<br><br><br>
+
+<!-- start of content pane 4 -->
+<div class="image2">
+<p>
+To contact us:
+</p>
+<p>
+Anichkov Most Travel is located at 12-26B River Road in Fairlawn, NJ - come in and say hi
+on Weekdays and Saturdays between 12 and 7 pm. Or contact us by phone at
+201-794-7737. <br> If you would like, submit the form below so that we can contact you directly.
+Along the way feel free to scroll over the sorrounding photographs for some travel inspirations
+or your next vacation!
+</p>
+</div>
+<!-- end of content pane 4 -->
+
+
+
+<div class="image2" id="give_me_margin">
+<center>
+
+    		<form action = "email_form.php">
+
+    		Name: <br>
+    		<input type="text" name="name"> <br><br>
+    		Phone: <br>
+    		<input type="text" name="phone_number"> <br><br>
+    		Travel Idea (optional): <br>
+    		<input type="text" name="location" id="Location">
+    		<br><br>
+    		<input type="submit" value="Submit">
+
+
+    	</form>
+
+    	</center>
+</div>
+
+
+</div>
+
+<script>
+function fill_box(name){
+	var textbox = document.getElementById("Location");
+	textbox.value = name;
+}
+</script>
+</body>
+</html>
